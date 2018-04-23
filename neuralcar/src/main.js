@@ -9,16 +9,10 @@ import VueFire from 'vuefire'
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/storage'
+import config from 'config'
 
 Vue.use(VueFire)
-var config = {
-  apiKey: 'AIzaSyDi_I-vOsvRulnBsHPr8ER6dlF6KIksOk8',
-  authDomain: 'neuralcar-1524307186929.firebaseapp.com',
-  databaseURL: 'https://neuralcar-1524307186929.firebaseio.com',
-  projectId: 'neuralcar-1524307186929',
-  storageBucket: 'neuralcar-1524307186929.appspot.com',
-  messagingSenderId: '1087596213113'
-}
+
 firebase.initializeApp(config)
 export const db = firebase.firestore()
 export const storageRef = firebase.storage().ref()

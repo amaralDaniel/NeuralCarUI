@@ -98,7 +98,7 @@
                 _self.price = 56600
               }
               if (_self.model === 'Clio IV') {
-                _self.price = 1000
+                _self.price = 8000
               }
               if (_self.model === '991 997') {
                 _self.price = 53000
