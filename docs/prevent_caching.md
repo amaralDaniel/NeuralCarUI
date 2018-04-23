@@ -55,9 +55,9 @@ Nginx: Limit caching for the two essential files
 
     location ~ (index.html|service-worker.js)$ {
       # ...
-      add_header Last-Modified $date_gmt;
-      add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
-      if_modified_since off;
-      expires off;
-      etag off;
+      add_header Last-Modified $date_gmt
+      add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0'
+      if_modified_since off
+      expires off
+      etag off
     }
